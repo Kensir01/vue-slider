@@ -47,6 +47,9 @@ const vue = new Vue(
                 }
                 
             },
+            mostra(indice){
+                this.active = indice;
+            }
         }
     }   
 );

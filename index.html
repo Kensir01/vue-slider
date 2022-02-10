@@ -13,6 +13,7 @@
    <div class="container" id="root">
        
         <div class="items">
+
             <div class="item active">
                 <img :src="items[active].url" alt="">
                 <div class="text">
@@ -25,7 +26,7 @@
             <div class="prev" @click="previous"></div>
             <div class="next" @click="next"></div>
 
-            <div class="thumb" :class= "indice == active?'active': '' " v-for="(item, indice) in items">
+            <div class="thumb" :class= "indice == active?'active': '' " v-for="(item, indice) in items" @click="mostra(indice)">
                 <img :src="item.url" alt="">
             </div> 
            
