@@ -49,7 +49,13 @@ const vue = new Vue(
             },
             mostra(indice){
                 this.active = indice;
-            }
+            },
+            // IniziaSlide() {
+            //     this.clock = setInterval(this.next, 3000);
+            // },
+            // StopSlide() {
+            //     clearInterval(this.clock);
+            // }
         }
     }   
 );
